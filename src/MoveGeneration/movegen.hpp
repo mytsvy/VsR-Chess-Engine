@@ -10,7 +10,7 @@
  Other chars are name of the piece
 */
 
-enum M_Flags{
+enum M_Flags : int{
     NORMAL, DOUBLE_PAWN_PUSH, CAPTURE, EN_PASSANT, CASTLING, PROMOTION
 };
 
