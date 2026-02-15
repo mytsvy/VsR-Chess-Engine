@@ -1,20 +1,7 @@
-#include <cstdint>
+#include "types.hpp"
 
 #ifndef BITBOARD_HPP
 #define BITBOARD_HPP
-
-typedef uint64_t u64;
-typedef uint16_t u16;
-
-enum Pieces : int{
-    W_PAWNS, W_ROOKS, W_KNIGHTS, W_BISHOPS, W_QUEEN, W_KING, // 0 - 5
-    B_PAWNS, B_ROOKS, B_KNIGHTS, B_BISHOPS, B_QUEEN, B_KING, // 6 - -11
-    PIECE_NUMBERS, EMPTY_SQ
-};
-
-enum Color : int{
-    WHITE = 0, BLACK = 1, BOTH = 2
-};
 
 namespace Masks{
     constexpr u64 FILE_A = 0x0101010101010101ULL;

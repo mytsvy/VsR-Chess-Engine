@@ -1,6 +1,6 @@
 #ifndef MOVEGENERATION_HPP
 #define MOVEGENERATION_HPP
-#include "../bitboard.hpp"
+#include "../types.hpp"
 
 /*
  Pseudo Move Functions
@@ -9,10 +9,6 @@
  M for Move
  Other chars are name of the piece
 */
-
-enum M_Flags : int{
-    NORMAL, DOUBLE_PAWN_PUSH, CAPTURE, EN_PASSANT, CASTLING, PROMOTION
-};
 
 
 struct Move{
@@ -28,11 +24,11 @@ struct MoveList{
     inline void add(u16 f, u16 t, u16 flag){ moves[count++] = {f, t, flag};}
 };
 
-void P_PM();
-void P_NM();
-void P_BM();
-void P_QM();
-void P_KM();
-void P_RM();
+void P_PM(u16 f, u16 t, u16 flag);
+void P_NM(u16 f, u16 t, u16 flag);
+void P_BM(u16 f, u16 t, u16 flag);
+void P_QM(u16 f, u16 t, u16 flag);
+void P_KM(u16 f, u16 t, u16 flag);
+void P_RM(u16 f, u16 t, u16 flag);
 
 #endif

@@ -3,12 +3,9 @@
 
 //Board update will be added in the future
 
-void P_PM(){}
-void P_NM(){
-
-}
-void P_BM(){}
-void P_QM(){}
-void P_KM(){}
-
-void P_RM(){}
+void P_PM(u16 f, u16 t, u16 flag){}
+void P_NM(u16 f, u16 t, u16 flag){}
+void P_BM(u16 f, u16 t, u16 flag){}
+void P_QM(u16 f, u16 t, u16 flag){}
+void P_KM(u16 f, u16 t, u16 flag){}
+void P_RM(u16 f, u16 t, u16 flag){}
