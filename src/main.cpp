@@ -1,10 +1,9 @@
 #include <iostream>
 #include "bitboard.hpp"
 
-
 const char pieceChars[] = "PRNBQKprnbqk";
 
-void printBoard() {
+void printBoard(VsR::Board board) {
     std::cout << "\n       [ Black ]\n";
     std::cout << "  a b c d e f g h\n";
     std::cout << " +-----------------+\n";
@@ -33,6 +32,7 @@ void printBoard() {
 
 int main() {
     initBoard(); 
-    printBoard();     
+    VsR::Board board;
+    printBoard(board);     
     return 0;
 }
